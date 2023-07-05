@@ -1,4 +1,6 @@
-import useGlobalContext from '@/Context/GlobalContext'
+
+import Lib from '@/components/lib'
+import useGlobalContext from '@/context/GlobalContext'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 
@@ -13,7 +15,8 @@ export default function Home() {
       <Head>
         <title>Nome a definir</title>
       </Head>
-      <div>{value}</div>
+      <div className=''>{value}</div>
+      <Lib />
     </main>
   )
 }
