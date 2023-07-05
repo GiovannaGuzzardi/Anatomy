@@ -10,8 +10,9 @@
     Trabalho feito em coloboração com estudantes de medicina para produção de um site que se adapte aos estudos dos mesmos
     ao expor em detalhes o funcionamento do corpo humano 
     Desenvolvedores envolvidos : 
-        Giovanna Guzzardi
+        Giovanna Guzzardi - linkedin  https://br.linkedin.com/in/giovanna-guzzardi-707b6426b
         João ...
+    Estudantes de outros cursos 
 
 ## Conceitos utilizados em ordem
     context
@@ -20,4 +21,8 @@
         organização e layout das paginas
 
 ## Conhecimentos aplicados
-# Anatomy
+    Dando bug na parte de cores
+
+## Observações Importantes
+    1 para aplicar o tailwind de forma ampla no projeto todas as pastas tem que ter letra minuscula
+     
