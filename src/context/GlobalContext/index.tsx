@@ -2,17 +2,17 @@ import React, { createContext, useContext, useState } from "react";
 import { GlobalContextI } from "./type";
 
 const GlobalContext = createContext<GlobalContextI>({
-    setValue: () => null,
-    value: 0
+    setBodyStructure: () => null,
+    bodyStructure: false
 });
 
 export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
-    const [value, setValue] = useState<number>(5);
+    const [bodyStructure, setBodyStructure] = useState<boolean>(false)
     return (
         <GlobalContext.Provider
             value={{
-                setValue,
-                value
+                bodyStructure,
+                setBodyStructure,
             }}
         >
             {children}

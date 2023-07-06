@@ -1,4 +1,5 @@
 export interface GlobalContextI {
-    setValue: React.Dispatch<React.SetStateAction<number>>,
-    value: number
+
+    setBodyStructure: React.Dispatch<React.SetStateAction<boolean>>,
+    bodyStructure: boolean
 }

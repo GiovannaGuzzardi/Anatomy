@@ -33,12 +33,24 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.20.7":
+"@babel/runtime@^7.20.13", "@babel/runtime@^7.20.7", "@babel/runtime@^7.22.5":
   version "7.22.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.6.tgz#57d64b9ae3cff1d67eb067ae117dac087f5bd438"
   integrity sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==
   dependencies:
     regenerator-runtime "^0.13.11"
+
+"@emotion/is-prop-valid@^0.8.2":
+  version "0.8.8"
+  resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
+  integrity sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==
+  dependencies:
+    "@emotion/memoize" "0.7.4"
+
+"@emotion/memoize@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
+  integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
 
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
@@ -229,6 +241,14 @@
   integrity sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==
   dependencies:
     tslib "^2.4.0"
+
+"@types/hoist-non-react-statics@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -811,6 +831,11 @@ core-js@^2.4.0:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
+
+core-js@^3:
+  version "3.31.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.31.1.tgz#f2b0eea9be9da0def2c5fece71064a7e5d687653"
+  integrity sha512-2sKLtfq1eFST7l7v62zaqXacPc7uG8ZAya8ogijLhTtaKNcpzpB4TMoTw2Si+8GYKRwFPMMtUT0263QFWFfqyQ==
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -1516,6 +1541,15 @@ fraction.js@^4.2.0:
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
   integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
+framer-motion@^10.12.18:
+  version "10.12.18"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-10.12.18.tgz#92015860b6468a82e76c4739fcae81e1f6723b3f"
+  integrity sha512-cfhiUpPbj+0eEWKjuD+5cz5cMqH71xOtMxGiS/cSGfHn2OlHIEAqFnFyzEMENw5PxWR9bMVhatzzpD6lexmHZQ==
+  dependencies:
+    tslib "^2.4.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
@@ -1749,6 +1783,20 @@ hase@2.0.0:
     "@babel/runtime" "7.1.2"
     amqplib "0.5.2"
 
+hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
+  dependencies:
+    react-is "^16.7.0"
+
+html-parse-stringify@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/html-parse-stringify/-/html-parse-stringify-3.0.1.tgz#dfc1017347ce9f77c8141a507f233040c59c55d2"
+  integrity sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==
+  dependencies:
+    void-elements "3.1.0"
+
 http-errors@1.6.3, http-errors@~1.6.2, http-errors@~1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.6.3.tgz#8b55680bb4be283a0b5bf4ea2e38580be1d9320d"
@@ -1768,6 +1816,23 @@ human-signals@^4.3.0:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-4.3.1.tgz#ab7f811e851fca97ffbd2c1fe9a958964de321b2"
   integrity sha512-nZXjEF2nbo7lIw3mgYjItAfgQXog3OjJogSbKa2CQIIvSGWcKgeJnQlNXip6NglNzYH45nSRiEVimMvYL8DDqQ==
+
+i18next-fs-backend@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/i18next-fs-backend/-/i18next-fs-backend-2.1.5.tgz#03347eacde6a35b599da1889a048ae63bcf0c687"
+  integrity sha512-7fgSH8nVhXSBYPHR/W3tEXXhcnwHwNiND4Dfx9knzPzdsWTUTL/TdDVV+DY0dL0asHKLbdoJaXS4LdVW6R8MVQ==
+
+i@^0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/i/-/i-0.3.7.tgz#2a7437a923d59c14b17243dc63a549af24d85799"
+  integrity sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==
+
+iconsax-react@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/iconsax-react/-/iconsax-react-0.0.8.tgz#5e992e9bd4bb298da019b2c13f76de5e4bb8e4b4"
+  integrity sha512-l3dVk4zGtkkJHgvNYqAf0wDKqnKxXykee5/DoESGo2JvSYwaxajJUHSX2YrPRXSov8Hd8ClGFwJxCEaEjrFD1Q==
+  dependencies:
+    prop-types "^15.7.2"
 
 iconv-lite@0.4.23:
   version "0.4.23"
@@ -2343,6 +2408,17 @@ negotiator@0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
+next-i18next@^14.0.0:
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-14.0.0.tgz#fd637c81df96c9d6f2cc4716037130ac4e5d6968"
+  integrity sha512-umv8hOZoSoAA+td3ErfemyO/5Ib2pnYCdQ8/Oy+fncS2skFIL3hHKRer3Oa3Nfm4Xbv5p6DHWzm3NhT1j4tWwg==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    "@types/hoist-non-react-statics" "^3.3.1"
+    core-js "^3"
+    hoist-non-react-statics "^3.3.2"
+    i18next-fs-backend "^2.1.5"
+
 next@13.4.8:
   version "13.4.8"
   resolved "https://registry.yarnpkg.com/next/-/next-13.4.8.tgz#72245bf4fdf328970147ee30de97142c39b1cb3f"
@@ -2704,7 +2780,7 @@ processenv@1.1.0:
   dependencies:
     babel-runtime "6.26.0"
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -2759,7 +2835,15 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-is@^16.13.1:
+react-i18next@^13.0.1:
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-13.0.1.tgz#4d047d2d63d9616f7f5fd4ca88b1cc449cc15290"
+  integrity sha512-gMO6N2GfSfuH7xlHSsZ/mZf+Py9bLm/+EDKIn5fNTuDTjcCcwmMU5UEuGCDk5mdfivbo7ySyYXBN7B9tbGUxiA==
+  dependencies:
+    "@babel/runtime" "^7.22.5"
+    html-parse-stringify "^3.0.1"
+
+react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -3456,6 +3540,11 @@ vary@^1, vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
+
+void-elements@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-3.1.0.tgz#614f7fbf8d801f0bb5f0661f5b2f5785750e4f09"
+  integrity sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==
 
 watchpack@2.4.0:
   version "2.4.0"
